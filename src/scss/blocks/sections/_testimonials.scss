@@ -1,0 +1,45 @@
+.testimonials {
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+
+    @include laptop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+
+  &__item {
+    padding: 3.2rem 3.25rem 3.6rem;
+    text-align: center;
+    border: 1px solid black;
+
+    @include laptop {
+      flex-basis: 45%;
+      flex-grow: 1;
+    }
+
+    @include desktop {
+      flex-basis: 20%;
+      flex-grow: 1;
+    }
+  }
+
+  &__quotation-marks {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__item-title {
+    margin-bottom: 2rem;
+  }
+}

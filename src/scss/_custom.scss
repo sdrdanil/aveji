@@ -1,0 +1,27 @@
+.swiper {
+  width: calc(100% + 1.6rem);
+
+  @include tablet {
+    width: calc(100% + 2.4rem);
+  }
+
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.swiper-wrapper {
+  @include laptop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.swiper-slide {
+  width: initial;
+}

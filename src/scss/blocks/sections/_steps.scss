@@ -1,0 +1,47 @@
+.steps {
+  &__inner {
+    position: relative;
+
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  }
+
+  &__title-wrapper {
+    flex-basis: 50%;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+
+    @include desktop {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  &__content {
+    flex-basis: 50%;
+  }
+
+  &__description {
+    margin-bottom: 2.8rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__item {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-main;
+  }
+
+  &__item-title {
+    margin-bottom: 2rem;
+  }
+}

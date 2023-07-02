@@ -1,0 +1,18 @@
+.main {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  @include tablet {
+    gap: 7.2rem;
+  }
+
+  @include laptop {
+    gap: 9.6rem;
+  }
+
+  @include desktop {
+    gap: 12rem;
+  }
+}

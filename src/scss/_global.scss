@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @extend %text;
+  font-size: 1.6rem;
+}
+
+body.menu-active {
+  @include mobile-only {
+    overflow: hidden;
+  }
+
+  @include tablet-only {
+    overflow: hidden;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 1.6rem;
+  @include tablet {
+    padding: 0 2.4rem;
+  }
+  @include desktop {
+    padding: 0 3.2rem;
+  }
+}
+
+.icon {
+  object-fit: initial;
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230628234442">
+  <link href="css/style.min.css?_v=20230628234442" rel="stylesheet">
+  <script defer src="js/app.min.js?_v=20230628234442"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>Aveji</title>
+</head>
+
+<body>
+  <nav class="menu" id="menu" hidden>
+    <div class="menu__overlay"></div>
+    <div class="menu__content">
+      <a class="menu__tel link" href="tel:79999999999">+7 999 999 99 99</a>
+      <button class="menu__close-menu" id="close-menu" type="button">
+        <svg class="menu__icon-close">
+          <use href="img/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item menu__item--logo" hidden>
+          <a class="menu__link link" href="#">
+            <svg class="menu__logo">
+              <use href="img/icons.svg#logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#about">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#projects">Проекты</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#">Материалы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#testimonials">Отзывы</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="container-fluid">
+      <div class="header__inner">
+        <div class="header__logo-wrapper">
+          <a class="header__logo-link link" href="#" aria-label="В начало">
+            <svg class="header__logo">
+              <use href="img/icons.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__button-wrapper">
+          <button class="header__open-menu header__button" id="open-menu" type="button" aria-label="Меню">
+            <svg class="header__icon-open">
+              <use href="img/icons.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="header__nav" id="nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__link link" href="#about">О нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__link link" href="#projects">Проекты</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__link link" href="#">Материалы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__link link" href="#testimonials">Отзывы</a>
+            </li>
+          </ul>
+          <div class="header__tel-wrapper">
+            <a class="header__tel link" href="tel:79999999999">+7 999 999 99 99</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero" id="hero">
+      <div class="container-fluid">
+        <div class="hero__inner">
+          <h1 class="hero__title title title--size--lg">
+            Эксклюзивная и&nbsp;нестандартная мебель&nbsp;для&nbsp;дома
+          </h1>
+          <p class="hero__text">
+            Мы можем произвести любую мебель для вашего проекта и&nbsp;найти производственное решение
+            любой&nbsp;задумки.
+          </p>
+          <div class="hero__link-wrapper">
+            <a class="hero__link link link--underline link--uppercase" href="#order">ЗАКАЗАТЬ ПРОЕКТ</a>
+          </div>
+          <div class="hero__main-image">
+            <picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpg" alt="image"></picture>
+          </div>
+          <div class="hero__extra-image">
+            <picture><source srcset="img/hero-extra.webp" type="image/webp"><img src="img/hero-extra.jpg" alt="image"></picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container-fluid">
+        <div class="about__inner">
+          <div class="about__sticky-title-wrapper">
+            <h2 class="about__sticky-title title">
+              Более 5 лет создаем мебель для вашего комфорта
+            </h2>
+          </div>
+          <div class="about__content">
+            <h2 class="about__title title">
+              О компании
+            </h2>
+            <p class="about__text">
+              Мы&nbsp;— команда профессионалов, которые могут произвести любую мебель для вашего проекта, а&nbsp;также
+              найти производственное решение любой задумки.
+            </p>
+            <p class="about__text">
+              Наша основная цель&nbsp;— реализовывать самые смелые задумки, и&nbsp;делать это качественно
+              и&nbsp;аккуратно.
+            </p>
+            <p class="about__text">
+              В качестве материалов мы&nbsp;используем натуральные&nbsp;— стекло, дерево, бетон, камень, металл
+              и&nbsp;эпоксидную смолу.
+            </p>
+            <ul class="about__info-list">
+              <li class="about__info-item">
+                <h3 class="title title--size--sm">1 год</h3>
+                <p class="text">гарантии на&nbsp;всю продукцию</p>
+              </li>
+              <li class="about__info-item">
+                <h3 class="title title--size--sm">300+</h3>
+                <p class="text">выполненных проектов</p>
+              </li>
+              <li class="about__info-item">
+                <h3 class="title title--size--sm">15 дней</h3>
+                <p class="text">срок производства</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps section" id="steps">
+      <div class="container-fluid">
+        <div class="steps__inner">
+          <div class="steps__title-wrapper">
+            <h2 class="steps__title title">
+              Как мы работаем
+            </h2>
+          </div>
+          <div class="steps__content">
+            <p class="steps__description">
+              Алгоритм работы с&nbsp;нами для удобства и&nbsp;понимания проекта
+            </p>
+            <ul class="steps__list">
+              <li class="steps__item">
+                <h3 class="steps__item-title title title--size--sm">Идея</h3>
+                <p class="steps__text">
+                  Клиент приходит к&nbsp;нам с&nbsp;идеей. Это может быть изображение/ эскиз или другой референс.
+                  А&nbsp;мы&nbsp;думаем над тем, как это реализовать, делаем технические чертежи и&nbsp;предлагаем
+                  решения
+                  по&nbsp;материалам.
+                </p>
+              </li>
+              <li class="steps__item">
+                <h3 class="steps__item-title title title--size--sm">Техническое задание</h3>
+                <p class="steps__text">
+                  Клиент приходит к&nbsp;нам с&nbsp;идеей. Это может быть изображение/ эскиз или другой референс.
+                  А&nbsp;мы&nbsp;думаем над тем, как это реализовать, делаем технические чертежи и&nbsp;предлагаем
+                  решения
+                  по&nbsp;материалам.
+                </p>
+              </li>
+              <li class="steps__item">
+                <h3 class="steps__item-title title title--size--sm">Коммерческое предложение</h3>
+                <p class="steps__text">
+                  Предпочтительно используем натуральные материалы. Но&nbsp;любую смету можем оптимизировать, упростив
+                  материалы или конструктив. Сможем подстроиться под бюджет клиента и&nbsp;согласуем коммерческое
+                  предложение
+                </p>
+              </li>
+              <li class="steps__item">
+                <h3 class="steps__item-title title title--size--sm">Подготовка рабочего проекта</h3>
+                <p class="steps__text">
+                  Создадим рабочую документацию и&nbsp;чертежи. Это фундамент качественного производства. На&nbsp;этом
+                  этапе утверждаем с&nbsp;клиентом все габариты и&nbsp;материалы, чертежи и&nbsp;приступаем
+                  к&nbsp;производству.
+                </p>
+              </li>
+              <li class="steps__item">
+                <h3 class="steps__item-title title title--size--sm">Производство и&nbsp;монтаж</h3>
+                <p class="steps__text">
+                  Производство занимает от&nbsp;15 рабочих дней, в&nbsp;зависимости от&nbsp;сложности и&nbsp;объёма.
+                  Монтажом тоже занимаемся самостоятельно. Ведь мы&nbsp;это сделаем быстро и&nbsp;аккуратно.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container-fluid">
+        <h2 class="projects__title title">Проекты</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="projects__example">
+                <picture><source srcset="img/content/project-1.webp" type="image/webp"><img class="projects__image" src="img/content/project-1.jpg" alt="Пример проекта"></picture>
+                <div class="projects__info">
+                  <span class="projects__text">Описание</span>
+                  <svg class="projects__arrow">
+                    <use href="img/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects__example">
+                <picture><source srcset="img/content/project-2.webp" type="image/webp"><img class="projects__image" src="img/content/project-2.jpg" alt="Пример проекта"></picture>
+                <div class="projects__info">
+                  <span class="projects__text">Описание</span>
+                  <svg class="projects__arrow">
+                    <use href="img/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects__example">
+                <picture><source srcset="img/content/project-3.webp" type="image/webp"><img class="projects__image" src="img/content/project-3.jpg" alt="Пример проекта"></picture>
+                <div class="projects__info">
+                  <span class="projects__text">Описание</span>
+                  <svg class="projects__arrow">
+                    <use href="img/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects__example">
+                <picture><source srcset="img/content/project-4.webp" type="image/webp"><img class="projects__image" src="img/content/project-4.jpg" alt="Пример проекта"></picture>
+                <div class="projects__info">
+                  <span class="projects__text">Описание</span>
+                  <svg class="projects__arrow">
+                    <use href="img/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects__example">
+                <picture><source srcset="img/content/project-5.webp" type="image/webp"><img class="projects__image" src="img/content/project-5.jpg" alt="Пример проекта"></picture>
+                <div class="projects__info">
+                  <span class="projects__text">Описание</span>
+                  <svg class="projects__arrow">
+                    <use href="img/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects__example">
+                <picture><source srcset="img/content/project-6.webp" type="image/webp"><img class="projects__image" src="img/content/project-6.jpg" alt="Пример проекта"></picture>
+                <div class="projects__info">
+                  <span class="projects__text">Описание</span>
+                  <svg class="projects__arrow">
+                    <use href="img/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+      <div class="container-fluid">
+        <h2 class="testimonials__title title">Отзывы</h2>
+        <ul class="testimonials__list">
+          <li class="testimonials__item">
+            <svg class="testimonials__quotation-marks">
+              <use href="img/icons.svg#quote"></use>
+            </svg>
+            <h3 class="testimonials__item-title title title--size--xs">
+              Игорь Антонов
+            </h3>
+            <p class="text">
+              Обратилась к&nbsp;Aveji по&nbsp;рекомендации. Команда сразу поняла, какой дизайн я&nbsp;хочу. Предоставили
+              несколько вариантов и&nbsp;в&nbsp;течение недели сделали наброски. Итог понравился, все на&nbsp;высшем
+              уровне.
+            </p>
+          </li>
+          <li class="testimonials__item">
+            <svg class="testimonials__quotation-marks">
+              <use href="img/icons.svg#quote"></use>
+            </svg>
+            <h3 class="testimonials__item-title title title--size--xs">
+              Ольга Иванова
+            </h3>
+            <p class="text">
+              После пары заказов у&nbsp;компании Aveji убедилась, что за&nbsp;мебелью теперь только к&nbsp;ним.
+              Абсолютно любые решения, в&nbsp;любых размерах и&nbsp;форм-факторе, то&nbsp;что нужно!
+            </p>
+          </li>
+          <li class="testimonials__item">
+            <svg class="testimonials__quotation-marks">
+              <use href="img/icons.svg#quote"></use>
+            </svg>
+            <h3 class="testimonials__item-title title title--size--xs">
+              Аркадий Макаров
+            </h3>
+            <p class="text">
+              Aveji&nbsp;— настоящие профессионалы своего дела. Быстро поняли мою задумку, сделали дизайн, согласовали
+              и&nbsp;изготовили мебель. А&nbsp;потом еще и&nbsp;бесплатно все собрали на&nbsp;месте. Большое спасибо!
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="order section" id="order">
+      <div class="container-fluid">
+        <div class="order__inner">
+          <div class="order__image-wrapper">
+            <picture><source srcset="img/order.webp" type="image/webp"><img src="img/order.jpg" alt="order image"></picture>
+          </div>
+          <div class="order__content">
+            <h2 class="order__title title">Хотите заказать проект?</h2>
+            <p class="order__text">Оставьте заявку, и мы вам перезвоним</p>
+            <form class="order__form form">
+              <fieldset class="order__fieldset">
+                <input class="form__input" type="text" placeholder="Имя">
+                <input class="form__input" type="email" placeholder="E-mail">
+                <input class="form__input" type="tel" placeholder="Телефон">
+              </fieldset>
+              <button class="button" type="submit">Отправить заявку</button>
+            </form>
+            <div class="order__apps">
+              <div class="order__item">
+                <a class="order__badge" href="#">
+                  <picture><source srcset="img/app-store-badge.webp" type="image/webp"><img src="img/app-store-badge.jpg" alt="app store badge"></picture>
+                </a>
+              </div>
+              <div class="order__item">
+                <a class="order__badge" href="#">
+                  <picture><source srcset="img/google-play-badge.webp" type="image/webp"><img src="img/google-play-badge.jpg" alt="google play badge"></picture>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="footer__inner">
+        <ul class="footer__socials">
+          <li class="footer__socials-item">
+            <a class="link link--uppercase" href="#">Вконтакте</a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="link link--uppercase" href="#">Телеграм</a>
+          </li>
+        </ul>
+        <ul class="footer__info">
+          <li class="footer__info-item">
+            <a class="link link--size--sm" href="#">Политика конфеденциальности</a>
+          </li>
+          <li class="footer__info-item">
+            <a class="link link--size--sm" href="#">Оплата и доставка</a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <p class="footer__text">© 2023 Aveji</p>
+          <p class="footer__text">Все права защищены</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

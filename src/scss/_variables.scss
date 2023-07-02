@@ -1,0 +1,38 @@
+$color-main: #212529;
+$color-background: #ECECEC;
+$color-accent-hover: #DDD7C0;
+$color-accent-active: #CBC6B2;
+$color-form-success: #F9C67B;
+$color-form-error: #E13A3A;
+
+
+%text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: $color-main;
+}
+
+%text--lg {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: $color-main;
+}
+
+%title {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  color: $color-main;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

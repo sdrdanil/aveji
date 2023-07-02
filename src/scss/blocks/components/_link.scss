@@ -1,0 +1,27 @@
+.link {
+  @extend %text--lg;
+  transition: .2s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-accent-hover;
+  }
+
+  &:active {
+    color: $color-accent-active;
+  }
+
+  &--size--sm {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  &--underline {
+    text-decoration: underline;
+    text-underline-offset: .2rem;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

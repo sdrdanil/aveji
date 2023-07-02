@@ -1,0 +1,29 @@
+.button {
+  padding: 12px 20px;
+  border: none;
+  color: white;
+  background: $color-main;
+  transition: .3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-main;
+    background: $color-accent-hover;
+  }
+
+  &:focus-visible {
+    color: $color-main;
+    background: $color-accent-hover;
+
+  }
+
+  &:active {
+    color: $color-main;
+    background: $color-accent-active;
+  }
+
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}

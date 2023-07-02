@@ -1,0 +1,58 @@
+.order {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+  }
+
+  &__image-wrapper {
+    display: none;
+
+    @include desktop {
+      display: initial;
+      grid-column: span 5;
+      max-height: 56.6rem;
+    }
+  }
+
+  &__content {
+    grid-column: span 12;
+
+    @include desktop {
+      grid-column: 7 / span 5;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin-bottom: 3.2rem;
+  }
+
+  &__form {
+    margin-bottom: 2.8rem;
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+  }
+
+  &__apps {
+    display: flex;
+    gap: .8rem;
+  }
+
+  &__badge {
+    display: inline-block;
+    width: 12.1rem;
+    height: 3.6rem;
+  }
+}

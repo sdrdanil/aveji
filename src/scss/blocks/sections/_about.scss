@@ -1,0 +1,64 @@
+.about {
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__sticky-title-wrapper {
+    display: none;
+    
+    @include desktop {
+      flex-basis: 50%;
+      display: initial;
+    }
+  }
+
+  &__sticky-title {
+    display: block;
+    position: sticky;
+    top: 0;
+  }
+
+  &__content {
+    @include desktop {
+      flex-basis: 50%;
+      display: initial;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__text {
+    margin-bottom: 1.6rem;
+  }
+
+  &__info-list {
+    padding-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include tablet {
+      width: initial;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  &__info-item {
+    width: 16rem;
+  }
+}
